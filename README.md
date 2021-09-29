@@ -1,2 +1,2 @@
 # CaltoTheCalculator
-Ornage Black Themed Calculator Named Calto
+Orange Black Themed Calculator Named Calto
