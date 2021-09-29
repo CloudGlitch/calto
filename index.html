@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" type="text/css" href="https://th.bing.com/th/id/Ra0e30e032b793717b00514b38236dc8a?rik=o9aoIOIQ7KBGxQ&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2ftristan-edwards%2fsevenesque%2f1024%2fCalculator-icon.png&ehk=n8MpCqEG%2bz%2bnsltbWG0FWziP9ntVASgxGphU0ltIT6c%3d&risl=&pid=ImgRaw">
+<title>CALTO</title>
+<meta name="google-site-verification" content="YHMzEvuRFni_ZqeO7pI8SKfzFovqScxqm-lF796MlVg" />
+</head>
+<body>
+<center><br><br><br>
+<div class="wrap">
+<form name="cal">
+        <input type="text" name="display">
+        <br><br>
+        <input type="button" value="C" onclick="cal.display.value=''" id=DEL style="background: #bfbfbf;">
+        <input type="button" value="%" onclick="cal.display.value+='%'" style="background: #bfbfbf;">
+        <input type="button" value="+" onclick="cal.display.value+='+'" style="background: #bfbfbf;">
+        <input type="button" value="-" onclick="cal.display.value+='-'" style="background: orange;">
+        <br><br>
+        <input type="button" value="1" onclick="cal.display.value+='1'">
+        <input type="button" value="2" onclick="cal.display.value+='2'">
+        <input type="button" value="3" onclick="cal.display.value+='3'">
+         <input type="button" value="x" onclick="cal.display.value+='*'" style="background: orange;">
+        <br><br>
+        <input type="button" value="4" onclick="cal.display.value+='4'">
+        <input type="button" value="5" onclick="cal.display.value+='5'">
+        <input type="button" value="6" onclick="cal.display.value+='6'">
+         <input type="button" value="÷" onclick="cal.display.value+='/'" style="background: orange;">
+        <br><br>
+        <input type="button" value="7" onclick="cal.display.value+='7'">
+        <input type="button" value="8" onclick="cal.display.value+='8'">
+        <input type="button" value="9" onclick="cal.display.value+='9'">
+        <input type="button" value="=" onclick="cal.display.value =eval(cal.display.value)" style="background: orange;">
+        <br><br>
+        <input type="button" value="0" onclick="cal.display.value+='0'" style="width: 160px;">
+        <input type="button" value="." onclick="cal.display.value+='.'">
+        <br><br>
+<form>
+</div>
+</center>
+</body>
+</html>
