@@ -1,52 +1,105 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta name="msvalidate.01" content="985E31D4671410081DE1A38A31F66B02" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="style.css">
 <link rel="icon" type="text/css" href="https://th.bing.com/th/id/Ra0e30e032b793717b00514b38236dc8a?rik=o9aoIOIQ7KBGxQ&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2ftristan-edwards%2fsevenesque%2f1024%2fCalculator-icon.png&ehk=n8MpCqEG%2bz%2bnsltbWG0FWziP9ntVASgxGphU0ltIT6c%3d&risl=&pid=ImgRaw">
 <title>Cloud Calto</title>
-<meta name="google-site-verification" content="YHMzEvuRFni_ZqeO7pI8SKfzFovqScxqm-lF796MlVg" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+<style>
+* {
+ font-family:Roboto Slab;
+ color:#000;
+}
+input[type=button] {
+	background: #fff;
+	border:2px solid black;
+	outline: none;
+	width: 90px;
+	height: 90px;
+	border-radius: 10px;
+	font-size: 20px;
+}
+#display {
+	width: 370px;
+	height: 45px;
+	outline: auto;
+	cursor: context-menu;
+	font-size: 40px;
+	text-align: right;
+	border: 0px;
+}
+body {
+	background: #fff;
+}
+#display {
+ overflow:eclipses;
+}
+.header{
+ position:absolute;
+ top:0px;
+}
+ .header2 {
+  position:absolute;
+  top:50px;
+}
+@media (max-width:900px){
+  .header , .header2 {
+   position:relative;
+}
+.header2 {
+ top:-50px;
+}
+}
+</style>
 </head>
 <body>
-<center><br><br><br>
+<h1 class="header">Cloud Calto</h1><br><p class="header2">created by <a href="https://github.com/CloudGlitch">CloudGlitch</a><br><br>press enter key instead of pressing the '=' button<br>press c key instead of pressing the 'C' button</p><center>
 <div class="wrap">
 <form name="cal">
-        <input type="text" name="display">
+        <input onblur="this.focus()" autofocus id="display">
         <br><br>
-        <input type="button" value="C" onclick="cal.display.value=''" id=DEL style="background: #bfbfbf;">
-        <input type="button" value="%" onclick="cal.display.value+='%'" style="background: #bfbfbf;">
-        <input type="button" value="+" onclick="cal.display.value+='+'" style="background: #bfbfbf;">
-        <input type="button" value="-" onclick="cal.display.value+='-'" style="background: orange;">
+        <input type="button" id="c" value="C (C)" onclick="cal.display.value=''" id=DEL style="background: #bfbfbf;">
+        <input type="button" id="%" value="%" onclick="cal.display.value+='%'" style="background: #bfbfbf;">
+        <input type="button" id="+" value="+" onclick="cal.display.value+='+'" style="background: #bfbfbf;">
+        <input type="button" id="-" value="-" onclick="cal.display.value+='-'" style="background: orange;">
         <br><br>
-        <input type="button" value="1" onclick="cal.display.value+='1'">
-        <input type="button" value="2" onclick="cal.display.value+='2'">
-        <input type="button" value="3" onclick="cal.display.value+='3'">
-         <input type="button" value="x" onclick="cal.display.value+='*'" style="background: orange;">
+        <input type="button" id="9" value="9" onclick="cal.display.value+='9'">
+        <input type="button" id="8" value="8" onclick="cal.display.value+='8'">
+        <input type="button" id="7" value="7" onclick="cal.display.value+='7'">
+         <input type="button" id="x" value="x (*)" onclick="cal.display.value+='*'" style="background: orange;">
         <br><br>
-        <input type="button" value="4" onclick="cal.display.value+='4'">
-        <input type="button" value="5" onclick="cal.display.value+='5'">
-        <input type="button" value="6" onclick="cal.display.value+='6'">
-         <input type="button" value="÷" onclick="cal.display.value+='/'" style="background: orange;">
+        <input type="button" id="6" value="6" onclick="cal.display.value+='6'">
+        <input type="button" id="5" value="5" onclick="cal.display.value+='5'">
+        <input type="button" id="4" value="4" onclick="cal.display.value+='4'">
+         <input type="button" id="/" value="÷ (/)" onclick="cal.display.value+='/'" style="background: orange;">
         <br><br>
-        <input type="button" value="7" onclick="cal.display.value+='7'">
-        <input type="button" value="8" onclick="cal.display.value+='8'">
-        <input type="button" value="9" onclick="cal.display.value+='9'">
-        <input type="button" value="=" onclick="cal.display.value =eval(cal.display.value)" style="background: orange;">
+        <input type="button" id="3" value="3" onclick="cal.display.value+='3'">
+        <input type="button" id="2" value="2" onclick="cal.display.value+='2'">
+        <input type="button" id="1" value="1" onclick="cal.display.value+='1'">
+        <input type="button" id="=" value="= (enter)" onclick="cal.display.value =eval(cal.display.value)" style="background: orange;">
         <br><br>
-        <input type="button" value="0" onclick="cal.display.value+='0'" style="width: 160px;">
-        <input type="button" value="." onclick="cal.display.value+='.'">
+        <input type="button" id="0" value="0" onclick="cal.display.value+='0'" style="width: 275px;">
+        <input type="button" id="." value="." onclick="cal.display.value+='.'">
         <br><br>
 <form>
-</div>
-</center>
+</div></center><h2>press spacebar to clear input field</h2>
 </body>
         <script language="JavaScript">
-  /**
-    * Disable right-click of mouse, F12 key, and save key combinations on page
-    * By Arthur Gareginyan (https://www.arthurgareginyan.com)
-    * For full source code, visit https://mycyberuniverse.com
-    */
+document.addEventListener("keydown", function(e) {
+if(event.keyCode === 13) {
+ e.preventDefault()
+ document.getElementById("=").click();
+}
+if(event.keyCode === 67) {
+ e.preventDefault()
+ document.getElementById("display").value = " ";
+}
+});
   window.onload = function() {
     document.addEventListener("contextmenu", function(e){
       e.preventDefault();
